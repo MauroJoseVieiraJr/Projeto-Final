@@ -1,0 +1,61 @@
+/* Estilos CSS */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.navbar {
+	background-color: #1a0dd9;
+	padding: 10px;
+}
+
+.navbar button {
+	background-color: transparent;
+	border: none;
+	color: #e6dada;
+	cursor: pointer;
+	padding: 8px 16px;
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+.navbar button:hover {
+	background-color: #645e5e;
+}
+
+.content {
+	padding: 20px;
+}
+
+.login-box {
+	width: 300px;
+	margin: 100px auto;
+	border: 1px solid #ddd;
+	padding: 20px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.login-box input[type="text"],
+.login-box input[type="password"] {
+/* Estilos dos campos de entrada */
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.login-box button.login-button {
+/* Estilos do botão de login */
+	margin-top: 10px;
+}
+
+footer {
+	background-color: blue;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
