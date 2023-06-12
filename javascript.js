@@ -2,8 +2,8 @@
 function showHome() {
 // Lógica para mostrar o conteúdo da página Home
 document.querySelector('.content').innerHTML = `
-	<h1>Home</h1>
-	<p>Bem-vindo à nossa página inicial.</p>
+	<h1>Bem-vindo à página de vagas de emprego</h1>
+	<p>Aqui você encontrará diversas oportunidades de trabalho.</p>
 	`;
 }
 
@@ -19,16 +19,32 @@ function showCadastro() {
 // Lógica para mostrar o conteúdo da página de Cadastro
 document.querySelector('.content').innerHTML = `
 	<h1>Cadastre-se</h1>
-	<p>Preencha o formulário abaixo para se cadastrar.</p>
+	<p>Envie seu currículo para o nosso banco de dados, quando surgir uma oportunidade entraremos em contato.</p>
+	<p>Preencha todos os campos requeridos do formulário abaixo e boa sorte!</p>
+	
 	<form class="contact-form">
-		<input type="text" placeholder="Área de Atuação" required />
-		<input type="text" placeholder="Nome Completo" required />
-		<input type="text" placeholder="Cidade" required />
-		<input type="email" placeholder="E-mail" required />
-		<input type="text" placeholder="LinkedIn" />
-		<input type="text" placeholder="Celular" required />
-		<input type="text" placeholder="Telefone Fixo" />
-		<button onclick="enviarCadastro()">Enviar Cadastro</button>
+		<label for="nome"><b>Nome completo</b></label>
+		<input type="text" placeholder="Nome Completo" id="nome" required />
+		
+		<label for="atuacao"><b>Área de Atuação</b></label>
+		<input type="text" placeholder="Área de Atuação" id="atuacao" required />
+		
+		<label for="cidade"><b>Cidade</b></label>
+		<input type="text" placeholder="Cidade" id="cidade" required />
+		
+		<label for="email"><b>E-mail</b></label>
+		<input type="email" placeholder="E-mail" id="email" required />
+		
+		<label for="linkedin"><b>LinkedIn</b></label>
+		<input type="text" placeholder="LinkedIn" id="linkedin"/>
+		
+		<label for="cel"><b>Celular</b></label>
+		<input type="text" placeholder="Celular" id="cel" required/>
+		
+		<label for="tel"><b>Telefone Fixo</b></label>
+		<input type="text" placeholder="Telefone Fixo" id="tel"/>
+		
+		<button onclick="enviarCadastro()" class="contact-button">Enviar Cadastro</button>
 	</form>
 	`;
 }
@@ -44,13 +60,18 @@ function showSobre() {
 function showContato() {
 // Lógica para mostrar o conteúdo da página de Contato
 document.querySelector('.content').innerHTML = `
-	<h1>Contato</h1>
-	<p>Entre em contato conosco:</p>
-	<p>Telefone: (00) 1234-5678</p>
-	<p>Email: EmpresaEmpregosXX@gmail.com</p>
+	<h1>Fale conosco</h1>
+	<p>Críticas, sugestões ou desabafos, responderemos em até 24h em dias úteis.</p>
 	<div class="contact-form">
-		<input type="email" placeholder="Digite seu e-mail" />
-		<button onclick="enviarEmail()">Enviar</button>
+		<label for="email"><b>Email</b></label>
+		<input type="email" placeholder="Digite seu e-mail" required/>
+		
+		<label for="subject"><b>Assunto</b></label>
+		<input type="text" placeholder="Assunto" required/>
+		
+		<label for="mensagem"><b>Mensagem</b></label>
+		<textarea name="mensagem" id="mensagem" rows=10 required></textarea>
+		<button onclick="enviarEmail()" class="contact-button">Enviar</button>
 	</div>
 	`;
 }

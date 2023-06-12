@@ -28,26 +28,85 @@ body {
 	padding: 20px;
 }
 
+.contact-form {
+	width: 95%;
+	margin: 10px auto;
+	border: none;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	background: #d5d5ff;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+/* Estilos dos campos de entrada */
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+	box-sizing: border-box;
+	background: #f0f0f0;
+	border: none;
+	outline: none;
+}
+.contact-form button.contact-button {
+/* Estilo do botão de cadastro */
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	color: white;
+	background-color: #2020f0;
+	border: none;
+	outline: none;
+}
+.contact-form textarea {
+/* Estilos dos campos de entrada */
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
+	box-sizing: border-box;
+	background: #f0f0f0;
+	border: none;
+	outline: none;
+	resize: none;
+}
+
 .login-box {
-	width: 300px;
-	margin: 100px auto;
-	border: 1px solid #ddd;
+	width: 100%px;
+	margin: 10px;
+	border: none;
 	padding: 20px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background: #d5d5ff;
 }
 .login-box input[type="text"],
 .login-box input[type="password"] {
 /* Estilos dos campos de entrada */
-	margin-bottom: 10px;
 	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: inline-block;
 	box-sizing: border-box;
+	background: #f0f0f0;
+	border: none;
+	outline: none;
 }
 .login-box button.login-button {
 /* Estilos do botão de login */
+	width: 100%;
+	padding: 10px;
 	margin-top: 10px;
+	color: white;
+	background-color: #2020f0;
+	border: none;
+	outline: none;
 }
 
 footer {
