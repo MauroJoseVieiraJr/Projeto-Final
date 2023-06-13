@@ -6,14 +6,14 @@ body {
 }
 
 .navbar {
-	background-color: #1a0dd9;
+	background-color: #4040ff;
 	padding: 10px;
 }
 
 .navbar button {
 	background-color: transparent;
 	border: none;
-	color: #e6dada;
+	color: white;
 	cursor: pointer;
 	padding: 8px 16px;
 	margin-right: 10px;
@@ -21,7 +21,7 @@ body {
 }
 
 .navbar button:hover {
-	background-color: #645e5e;
+	background-color: #10a9f9;
 }
 
 .content {
@@ -75,8 +75,8 @@ body {
 }
 
 .login-box {
-	width: 100%px;
-	margin: 10px;
+	width: 40%;
+	margin: 10px auto;
 	border: none;
 	padding: 20px;
 	text-align: center;
@@ -109,8 +109,27 @@ body {
 	outline: none;
 }
 
+table {
+	width: 100%;
+	outline: none;
+}
+
+th {
+	background-color: #d5d5ff;
+}
+
+th, td {
+	border: 0;
+	padding: 10px;
+	text-align: left;
+}
+
+tr:nth-child(even) {
+	background-color: #f0f0f0;
+}
+
 footer {
-	background-color: blue;
+	background-color: #4040ff;
 	color: white;
 	padding: 10px;
 	text-align: center;

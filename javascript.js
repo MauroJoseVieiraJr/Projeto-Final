@@ -12,6 +12,51 @@ function showVagas() {
 document.querySelector('.content').innerHTML = `
 	<h1>Vagas de Emprego</h1>
 	<p>Confira nossas últimas oportunidades de trabalho.</p>
+	
+	<table cellpadding="0" cellspacing="0">
+		<tr>
+			<th>ID da vaga</th>
+			<th>Cargo</th>
+			<th>Descrição</th>
+			<th>Salário</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Desenvolvedor Java</td>
+			<td>Resolva "problemas" utilizando a linguagem Java e ganhe dinheiro.</td>
+			<td>2000 BRL</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Desenvolvedor C++</td>
+			<td>"Resolva" problemas utilizando a linguagem C++ e ganhe dinheiro.</td>
+			<td>2000 BRL</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Desenvolvedor Python</td>
+			<td>Finja que trabalhe para ganhar dinheiro.</td>
+			<td>1999 BRL</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Recursos Humanos</td>
+			<td>Seja um pé no saco.</td>
+			<td>Não</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Gerente</td>
+			<td>Seja um zero à esquerda com um zero à direita no seu salário.</td>
+			<td>20000 BRL</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>Limpezas Gerais</td>
+			<td>Não, você não vai limpar computadores.</td>
+			<td>1337 BRL</td>
+		</tr>
+	</table>
 	`;
 }
 
