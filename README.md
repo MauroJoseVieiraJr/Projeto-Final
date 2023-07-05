@@ -33,7 +33,7 @@ https://www.youtube.com/watch?v=a_yxI-stMsM<br>
 Projeto Web API Java Spring Boot - 6 (Endpoints)<br>
 https://www.youtube.com/watch?v=ga3Fj47hBLU<br>
 Projeto Web API Java Spring Boot - 7 (Conectando Front/Back)<br>
-https://www.youtube.com/watch?v=hsewph3Xphw
+https://www.youtube.com/watch?v=hsewph3Xphw<br>
 innerHTML with For Loop in Javascript<br>
 https://stackoverflow.com/questions/12996763/innerhtml-with-for-loop-in-javascript<br>
 JavaScript | How to Fetch Data from an API<br>
