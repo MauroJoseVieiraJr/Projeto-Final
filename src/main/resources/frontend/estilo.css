@@ -124,9 +124,13 @@ th, td {
 	text-align: left;
 }
 
-tr:nth-child(even) {
-	background-color: #f0f0f0;
+/*
+Não consegui resolver essa merda no css, toquei o foda-se e fiz manualmente no js
+.tabelaEmpregos, tr:nth-child(even) {
+	background-color: #f0f0ff;
 }
+*/
+
 
 footer {
 	background-color: #4040ff;

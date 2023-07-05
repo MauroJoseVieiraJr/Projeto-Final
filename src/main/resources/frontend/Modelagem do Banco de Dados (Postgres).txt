@@ -11,8 +11,8 @@ create table candidate(	id           	serial      primary key,
 
 create table job(	id           	serial      primary key,
 					role         	varchar(255) not null,
-					activities    			varchar(255) not null,
-					requirements			varchar(255) not null
+					activities    	varchar(255) not null,
+					requirements	varchar(255) not null
 				);
 
 create table company(	id           	serial      primary key,

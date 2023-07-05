@@ -4,8 +4,10 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,6 +28,23 @@ public class CompanyController {
 	public void saveCompany(@RequestBody CompanyRequestDTO data) {
 		Company c = new Company(data);
 		repository.save(c);
+	}
+	
+	@CrossOrigin(origins = "*", allowedHeaders = "*")
+	@PutMapping
+	public void alterCompany(@RequestBody CompanyRequestDTO data) {
+		Company c = new Company(data);
+		
+		Company a = repository.getReferenceById(data.id());
+		a.update(c.getName(), c.getPostalCode(), c.getEmail(), c.getPassword());
+				
+		repository.save(a);
+	}
+	
+	@CrossOrigin(origins = "*", allowedHeaders = "*")
+	@DeleteMapping
+	public void deleteCompany(@RequestBody CompanyRequestDTO data) {
+		repository.deleteById(data.id());
 	}
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")

@@ -2,6 +2,7 @@ package com.senai.sc.ProjetoFinal.model;
 
 import com.senai.sc.ProjetoFinal.dto.request.RecruiterRequestDTO;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,10 +20,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class Recruiter {
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private Long id;
+	@Column(name = "name", columnDefinition = "varchar(255) not null")
 	private String name;
+	@Column(name = "email", columnDefinition = "varchar(255) not null")
 	private String email;
+	@Column(name = "password", columnDefinition = "varchar(255) not null")
 	private String password;
 	
 	public Recruiter() {}
@@ -31,6 +37,12 @@ public class Recruiter {
 		this.name = r.name();
 		this.email = r.email();
 		this.password = r.password();
+	}
+	
+	public void update(String name, String email, String password) {
+		this.name = name;
+		this.email = email;
+		this.password = password;
 	}
 
 	public Long getId() {

@@ -23,4 +23,18 @@ Para testar os endpoints do backend foi utilizado o software Insomnia (https://i
 Projeto inicial gerado com a ferramenta Spring Initializr<br>
 https://start.spring.io/<br>
 Criando Aplicação Fullstack do Zero com Java Spring e React - Parte 1: Desenvolvimento do Backend<br>
-https://www.youtube.com/watch?v=lUVureR5GqI
+https://www.youtube.com/watch?v=lUVureR5GqI<br>
+Projeto Web API Java Spring Boot - 2 (Front-end HTML/CSS)<br>
+https://www.youtube.com/watch?v=Vhc1oAYXqTk<br>
+Projeto Web API Java Spring Boot - 3 ( Front-end JavaScript)<br>
+https://www.youtube.com/watch?v=JOzFVnMzcXI<br>
+Projeto Web API Java Spring Boot - 5 (Model e DAO)<br>
+https://www.youtube.com/watch?v=a_yxI-stMsM<br>
+Projeto Web API Java Spring Boot - 6 (Endpoints)<br>
+https://www.youtube.com/watch?v=ga3Fj47hBLU<br>
+Projeto Web API Java Spring Boot - 7 (Conectando Front/Back)<br>
+https://www.youtube.com/watch?v=hsewph3Xphw
+innerHTML with For Loop in Javascript
+https://stackoverflow.com/questions/12996763/innerhtml-with-for-loop-in-javascript
+JavaScript | How to Fetch Data from an API
+https://www.youtube.com/watch?v=zOrejGF0oBA
